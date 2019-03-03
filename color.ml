@@ -10,7 +10,11 @@ doesn't pass all the unit tests. No need to debug it though. You'll be
 replacing it wholesale with a simpler implementation. *)
 
 (* 8-bit RGB channel colors *)
-type color = int ;;
+type color = RGB of int * int * int ;;
+
+
+
+
 
 (* Some standard color names *)
 type color_name =
@@ -20,11 +24,11 @@ type color_name =
 (* to_color r g b -- Returns the color corresponding to the RGB
    values given by r, g, and b *)
 let to_color (r : int) (g : int) (b : int) : color = 
-  r lsl 0b10000 + g lsl 0b1000 + b ;;
+  RGB (r, g, b) ;;
 
 (* red c -- Returns the red channel value for the color c *)
 let red (c : color) : int =
-  c lsr 0b10000  ;;
+  c. ;;
 
 (* green c -- Returns the green channel value for the color c *)
 let green (c : color) : int = 

@@ -1,0 +1,6 @@
+### Starting build.
+Backtrace:
+                      - Failed to build the target colors.mli
+                          - Building colors.mli:
+                              - Building colors.mly
+# Compilation unsuccessful.
